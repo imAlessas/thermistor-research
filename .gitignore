@@ -311,4 +311,5 @@ TSWLatexianTemp*
 
 # Autocompiled .md files
 README.pdf
-annotations/*.pdf
+paper-backbone.pdf
+notes.pdf
