@@ -53,5 +53,5 @@
   - [ ] Reinforce the significance of NTC and PTC thermistors.
   - [ ] Offer concluding thoughts or potential future developments.
 
-- [ ] **References:**
-  - [ ] Provide a comprehensive list of sources cited throughout the essay.
+- [x] **References:**
+  - [x] Provide a comprehensive list of sources cited throughout the essay.
