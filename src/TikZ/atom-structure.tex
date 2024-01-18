@@ -1,35 +1,35 @@
-\begin{tikzpicture}[scale=1.5]
+\begin{tikzpicture}[scale=1]
 
-    % Atom nucleus
-    \draw[fill=gray!30, opacity=0.7] (0,0) circle (0.5);
-    
-    % 1st orbit
-    \draw[thick, dashed, opacity=0.5] (0,0) circle (0.8);
-    \draw[fill=blue, opacity=0.5] (45:0.8) circle (0.15);
-    
-    % 2nd orbit
-    \draw[thick, dashed, opacity=0.5] (0,0) circle (1.2);
-    \foreach \angle in {30,150,270}
-      \draw[fill=blue, opacity=0.5] (\angle:1.2) circle (0.15);
-    
-    % 3rd orbit
-    \draw[thick, dashed, opacity=0.5] (0,0) circle (1.6);
-    \foreach \angle in {18,90,162,234,306}
-      \draw[fill=blue, opacity=0.5] (\angle:1.6) circle (0.15);
-    
-    % Valence shell (4th orbit)
-    \draw[thick] (0,0) circle (2.5);
-    \foreach \angle in {60, 120, 180, 240, 300, 360}
-      \draw[fill=red, opacity=0.5] (\angle:2.5) circle (0.15);
-    
-    % Arrow pointing out one inner electron (longer)
-    \draw[->, thick, black, opacity=0.7] (45:0.8) -- ++(45:2) node[right] {Inner Electron};
-    
-    % Arrow pointing out one valence electron
-    \draw[->, thick, black, opacity=0.7] (180:2.5) -- ++(180:0.6) node[left] {Valence Electron};
-    
-    % Arrows describing the outermost orbit
-    \draw[->, thick] (340:2.5) -- ++(340:0.6) node[right] {Valence Shell};
-    
-    \end{tikzpicture}
-    
+  % Atom nucleus
+  \draw[fill=gray!30, opacity=0.7] (0,0) circle (0.5);
+  
+  % 1st orbit
+  \draw[thick, dashed, opacity=0.5] (0,0) circle (0.8);
+  \draw[fill=blue, opacity=0.5] (0:0.8) circle (0.15);
+  
+  % 2nd orbit
+  \draw[thick, dashed, opacity=0.5] (0,0) circle (1.2);
+  \foreach \angle in {50,170,290}
+    \draw[fill=blue, opacity=0.5] (\angle:1.2) circle (0.15);
+  
+  % 3rd orbit
+  \draw[thick, dashed, opacity=0.5] (0,0) circle (1.6);
+  \foreach \angle in {72, 144, 216, 288, 360}
+    \draw[fill=blue, opacity=0.5] (\angle:1.6) circle (0.15);
+  
+  % Valence shell (4th orbit)
+  \draw[thick] (0,0) circle (2.5);
+  \foreach \angle in {60, 120, 180, 240, 300, 360}
+    \draw[fill=red, opacity=0.5] (\angle:2.5) circle (0.15);
+  
+  % Arrow pointing out one inner electron (longer)
+  \draw[->, thick, black, opacity=0.7] (45:0.8) -- ++(45:2) node[right] {Inner Electron};
+  
+  % Arrow pointing out one valence electron
+  \draw[->, thick, black, opacity=0.7] (180:2.5) -- ++(180:0.6) node[left] {Valence Electron};
+  
+  % Arrows describing the outermost orbit
+  \draw[->, thick] (340:2.5) -- ++(340:0.6) node[right] {Valence Shell};
+  
+  \end{tikzpicture}
+  
