@@ -8,7 +8,6 @@ List of possible article to use and cite:
 
 * [Negative temperature coefficient resistance (NTCR) ceramic thermistors: An industrial perspective](https://www.scopus.com/record/display.uri?eid=2-s2.0-65449164948&origin=reflist&sort=r-f&src=s&sid=4a0b8d5a83f9ac186da0e2d4941b122f&sot=a&sdt=cl&cluster=scosubjabbr%2c%22ENGI%22%2ct&sl=25&s=TITLE-ABS-KEY%28Thermistor%29)
 
-
 * [NTC THERMISTORS: WIDE VARIETY, HIGH RELIABILITY.](https://www.scopus.com/record/display.uri?eid=2-s2.0-0023401609&origin=resultslist&sort=r-f&src=s&sid=4a0b8d5a83f9ac186da0e2d4941b122f&sot=a&sdt=cl&cluster=scosubjabbr%2C%22ENGI%22%2Ct&s=TITLE-ABS-KEY%28Thermistor%29&sl=25&sessionSearchId=4a0b8d5a83f9ac186da0e2d4941b122f&relpos=8)
 
 * [High-reliability thermistors for space applications](https://www.scopus.com/record/display.uri?eid=2-s2.0-0024714373&origin=resultslist&sort=plf-t&src=s&sid=4a0b8d5a83f9ac186da0e2d4941b122f&sot=a&sdt=b&s=TITLE-ABS-KEY%28ntc+ptc%29&sl=25&sessionSearchId=4a0b8d5a83f9ac186da0e2d4941b122f&relpos=27)
@@ -20,3 +19,12 @@ List of possible article to use and cite:
 * [Semiconductor Materials: An Introduction to Basic Principles](https://books.google.lv/books?hl=it&lr=&id=RijFScU4TQ4C&oi=fnd&pg=PA2&dq=semiconductor+material+properties&ots=es-Y6F6uyI&sig=fS8fk0bUEdh80R89E2E62-ZJgAA&redir_esc=y#v=onepage&q=semiconductor%20material%20properties&f=false)
 
 * [Semiconductor Materials: Their Properties, Applications, and Recent Advances](https://www.scopus.com/record/display.uri?eid=2-s2.0-85126649141&origin=resultslist&sort=r-f&src=s&sid=4faba48de05d0a623e4fc2d10fa28928&sot=b&sdt=cl&cluster=scolang%2C%22English%22%2Ct&s=TITLE-ABS-KEY%28semiconductor%29&sl=29&sessionSearchId=4faba48de05d0a623e4fc2d10fa28928&relpos=0)
+
+
+* [Biomedical Sensors](https://books.google.lv/books?id=7cI83YOIUTkC&q=Samuel+Ruben+and+Thermistor&pg=PA12&redir_esc=y#v=snippet&q=Samuel%20Ruben%20and%20Thermistor&f=false)
+@book{jones2010biomedical,
+  title={Biomedical sensors},
+  author={Jones, Deric P},
+  year={2010},
+  publisher={Momentum press}
+}
