@@ -22,9 +22,5 @@ List of possible article to use and cite:
 
 
 * [Biomedical Sensors](https://books.google.lv/books?id=7cI83YOIUTkC&q=Samuel+Ruben+and+Thermistor&pg=PA12&redir_esc=y#v=snippet&q=Samuel%20Ruben%20and%20Thermistor&f=false)
-@book{jones2010biomedical,
-  title={Biomedical sensors},
-  author={Jones, Deric P},
-  year={2010},
-  publisher={Momentum press}
-}
+
+* [Applications of self-heated PTC-thermistors to flow and quantity of heat measurements](https://www.sciencedirect.com/science/article/abs/pii/0250687482800176)
