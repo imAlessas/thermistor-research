@@ -1,16 +1,16 @@
 \begin{circuitikz}[scale = 0.8]
     % Voltage generator
-    \draw (0,0) to[V, v=$V$, invert] (0,2);
+    \draw (0,0) to[V, v=$V$, invert] (0,3);
     
     % Resistance
-    \draw (0,2) to[R, l=$R$] (2,2);
+    \draw (0,3) to[thR, l=PTC] (3,3);
     
     % PTC thermistor
-    \draw (2,2) to[thR, l=PTC] (4,2);
+    \draw (3,3) to[R, l=$R$] (6,3);
     
     % LED
-    \draw (4,2) to[leD*, l=LED] (4,0);
+    \draw (6, 3) to[leD*, l=LED] (6,0);
     
     % Ground
-    \draw (4,0) -- (0,0);
+    \draw (6,0) -- (0,0);
 \end{circuitikz}

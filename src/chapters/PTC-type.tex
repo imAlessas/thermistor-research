@@ -2,7 +2,7 @@
 As aforementioned, a positive temperature coefficient thermistor (also called \textbf{posistor}) is a thermally sensitive resistor that varies its resistivity as the temperature of the environment changes. Particularly because it is a positive coefficient, as the temperature increases, the resistivity of the semiconductor device increases as well.
 
 \subsection{Charateristics}
-One of the most important properties of the PTC thermistor is the characteristic curve between the \textbf{resistance} $R$ and the \textbf{temperature} $T$, which has to be converted from Celsius (or Fahrenheit) to Kelvin. Its curve is a positive exponential graph that respects the following equation \cite{Saburi196353}:
+One of the most important properties of the PTC thermistor is the characteristic curve between the \textbf{resistance} $R$ and the \textbf{temperature} $T$, which has to be converted from Celsius (or Fahrenheit) to Kelvin. Its curve is a positive exponential graph that respects the following equation \cite{Saburi196353}\cite{jones2010biomedical}:
 
 \begin{equation*}
     R = R_0\,e^{\beta\,(\frac{1}{T} - \frac{1}{T_0})}
@@ -18,7 +18,7 @@ One of the most important properties of the PTC thermistor is the characteristic
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = .7\textwidth]{../res/plots/PTC_logarithmic.png}
+    \includegraphics[width = .75\textwidth]{../res/plots/PTC_logarithmic.png}
     \label{fig:PTC_logarithmic}
     \caption{PTC resistance-temperature logarithmic curve.}
 \end{figure}
@@ -27,7 +27,7 @@ One of the most important properties of the PTC thermistor is the characteristic
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = .7\textwidth]{../res/plots/PTC_ratio.png}
+    \includegraphics[width = .75\textwidth]{../res/plots/PTC_ratio.png}
     \label{fig:PTC_ratio}
     \caption{PTC change ratio between $R$ and $R_0$}
 \end{figure}
@@ -50,7 +50,7 @@ Another important coefficient to know about is the \textbf{dissipation constant}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = .7\textwidth]{../res/plots/PTC_curr-temp.png}
+    \includegraphics[width = .75\textwidth]{../res/plots/PTC_curr-temp.png}
     \label{fig:PTC_curr-temp}
     \caption{Corrent-temperature relationship of a PTC thermistor.}
 \end{figure}
@@ -59,7 +59,7 @@ Another important coefficient to know about is the \textbf{dissipation constant}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = .7\textwidth]{../res/plots/PTC_volt-temp.png}
+    \includegraphics[width = .75\textwidth]{../res/plots/PTC_volt-temp.png}
     \label{fig:PTC_volt-temp}
     \caption{Voltage-temperature relationship of a PTC thermistor.}
 \end{figure}
@@ -68,14 +68,22 @@ Another important coefficient to know about is the \textbf{dissipation constant}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = .7\textwidth]{../res/plots/PTC_curr-volt.png}
+    \includegraphics[width = .75\textwidth]{../res/plots/PTC_curr-volt.png}
     \label{fig:PTC_curr-volt}
     \caption{Current-voltage relationship of a PTC thermistor.}
 \end{figure}
 
 \FloatBarrier \subsection{Applications}
+The applications of the posistors are remarkably important. One of the most popular uses of these devices is as \textit{current limiters} to protect other devices. Sure enough, when there is an excess of current through a circuit it may result in a damaged component of the circuit, like the LED in figure \ref{fig:PTC-circuit-LED}; using a PTC thermistor prevents this from happening because when the current starts increasing through the thermistor, it will heat it making the resistance increase. When the resistance starts increasing the current flowing through it will decrease (as shown in figure \ref{fig:PTC_curr-temp}) and the LED will be protected \cite{Saburi196353}.
 
+\begin{figure}
+    \centering
+    \input{../res/TikZ/PTC-circuit-LED.tex}
+    \label{fig:PTC-circuit-LED}
+    \caption{Current limiter PTC application}
+\end{figure}
 
+Another important use is for the \textit{temperature indicator}, when operating in parallel with a diode, or for \textit{temperature control} purposes. In this case, the PTC posistor can control the power dissipated by another device that is connected in series \cite{Saburi196353}.
 
-
+\todo{maybe add other PTC applications}
 
