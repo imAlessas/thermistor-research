@@ -28,8 +28,8 @@
 
 - [ ] **PTC Thermistors:**
   - [ ] **Definition and Characteristics:**
-    - [ ] Define PTC thermistors and explain characteristics.
-    - [ ] Contrast resistance-temperature behavior with NTC thermistors.
+    - [x] Define PTC thermistors and explain characteristics.
+    - [x] Contrast resistance-temperature behavior with NTC thermistors.
     - [ ] Discuss materials commonly used in PTC thermistors.
 
   - [ ] **Applications:**
