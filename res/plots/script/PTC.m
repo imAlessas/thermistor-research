@@ -1,20 +1,19 @@
 clc, clear, clearvars, close all
 
 % Define temperature range from 260 K to 420 K with intervals of 0.5 K
-T = 260 : 1/2 : 420;
+T = 100 : 1/2 : 600;
+
 
 % Calculate the parameter beta using the given resistance values at two temperature points
-beta = log(1e4/1e8) / (1/273.15 - 1/373.15);
+beta = log(30/40e3) / (1/253.15 - 1/358.15);
 
 % Set reference resistance and temperature values
-R0 = 1e4;
-T0 = 273.15;
+R0 = 500;
+T0 = 348.15;
 
 % Calculate resistance values using the Steinhart-Hart equation
 R = R0 * exp(beta * (1 ./ T - 1/T0));
 
-% Calculate resistance ratio normalized to the resistance at 25°C
-R_ratio = R ./ R((25 + 273 - 260) * 2);
 
 % Set position vector for figure windows
 pos_vector = [250, 100, 1000, 650];
@@ -23,15 +22,14 @@ pos_vector = [250, 100, 1000, 650];
 f = figure(1);
 f.Position = pos_vector;
 semilogy(T, R), grid on;
-xlim([270 420]);
 xlabel("Temperature [K]"), ylabel("Resistance [Ω]"), title("Resistance - Temperature")
 
 % Plot 2: Resistance Change (R/R25) vs. Temperature
 f = figure(2);
 f.Position = pos_vector;
-plot(T, R_ratio), grid on;
-xlim([300 420]), ylim([-500 1e4])
-xlabel("Temperature [K]"), ylabel("Resistance Change (R/R25)"), title("Resistance change ratio - Temperature")
+plot(T, R), grid on;
+xlim([300 400])
+xlabel("Temperature [K]"), ylabel("Resistance [Ω]"), title("Resistance - Temperature")
 
 % Define dissipation constant and reference temperature
 dissipation_constant = 4.5e-3;

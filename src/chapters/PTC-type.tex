@@ -16,22 +16,22 @@ One of the most important properties of the PTC thermistor is the characteristic
     \beta = \frac{\ln{\frac{R_2}{R_1}}}{\frac{1}{T_2} - \frac{1}{T_1}}
 \end{equation*}
 
-\noindent Using the previous equations, the curve can be plotted by writing down the equations using MATLAB, or other programming languages. Figure \ref{fig:PTC_logarithmic} shows how much the resistance increases as the temperature increases. In this case, the coefficient $\beta$ has been calculated by assuming that when $T_1 = 273.15 K$, $R_1 = 1k\Omega$ and when $T_2 = 373.15 K$, $R_2 = 100M\Omega$.\footnote{Please be aware that the selected values are purely for illustrative purposes; no devices with these characteristics exist in reality}
+\noindent Using the previous equations, the curve can be plotted by writing down the equations using MATLAB, or other programming languages. Figure \ref{fig:PTC_logarithmic} shows how much the resistance increases as the temperature increases. In this case, the coefficient $\beta$ has been calculated by assuming that when $T_1 = 358.15 K = 85^\circ C$, $R_1 = 40k\Omega$ and when $T_2 = 253.15 K = -20^\circ C$, $R_2 = 30\Omega$.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width = .75\textwidth]{../res/plots/PTC_logarithmic.png}
     \label{fig:PTC_logarithmic}
-    \caption{PTC resistance-temperature logarithmic curve.}
+    \caption{PTC resistance-temperature logarithmic curve, from -173°C to 326°C.}
 \end{figure}
 
-\FloatBarrier\noindent Secondly it might be interesting to plot the change ratio between the resistance $R$ and the value of the resistance at some fixed temperature. In the figure \ref{fig:PTC_ratio}, the fixed temperature value $T_0$ was 25° celsius (or 298.15 Kelvin) which implies that $R_0 = 16.7 k\Omega$.
+\FloatBarrier\noindent By restricting the plot between -13°C and 126°C it is more noticeable the exponential behavior of the posistor: the image \ref{fig:PTC_ratio} shows the limited exponential curve of the PTC thermistor.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width = .75\textwidth]{../res/plots/PTC_ratio.png}
     \label{fig:PTC_ratio}
-    \caption{PTC change ratio between $R$ and $R_0$}
+    \caption{PTC resistance-temperature curve, limited between -13°C and 126°C.}
 \end{figure}
 
 \FloatBarrier\noindent In both of the plots the resistance value or the change ratio drastically increases as the environment gets hotter. Generally, the equation describes the behavior of the PTC thermistor in an interval of temperature: in the PTC materials there is a temperature, called \textbf{Curie point} where the resistance starts to rise exponentially in comparison with the temperature (as shown in figure \ref{fig:PTC_logarithmic} and \ref{fig:PTC_ratio}); before the Curie temperature, the PTC thermistor does not increase drastically their resistance when the temperature raises. Generally, the Curie point in the PTC materials is between 50°C and 400°C \cite{Cheng2014441}.
