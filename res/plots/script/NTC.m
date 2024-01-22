@@ -30,29 +30,28 @@ plot(T, R), grid on;
 xlim([260 400])
 xlabel("Temperature [K]"), ylabel("Resistance [Ω]"), title("Resistance - Temperature")
 
-% % Define dissipation constant and reference temperature
-% dissipation_constant = 4.5e-3;
-% T0 = 298.15;
-% 
-% % Calculate power, voltage, and current
-% P = dissipation_constant * (T - T0);
-% V = sqrt(R .* P);
-% I = sqrt(P ./ R);
-% 
-% % Plot 3: Current vs. Temperature (log-log scale)
-% f = figure(3);
-% f.Position = pos_vector;
-% loglog(T, I), grid on;
-% xlabel("Temperature [K]"), ylabel("Current [A]"), title("Current - Temperature")
-% 
-% % Plot 4: Voltage vs. Temperature (log-log scale)
-% f = figure(4);
-% f.Position = pos_vector;
-% loglog(T, V), grid on;
-% xlabel("Temperature [K]"), ylabel("Voltage [V]"), title("Voltage - Temperature")
-% 
-% % Plot 5: Current vs. Voltage (log-log scale)
-% f = figure(5);
-% f.Position = pos_vector;
-% loglog(V, I), grid on;
-% xlabel("Voltage [V]"), ylabel("Current [A]"), title("Current - Voltage")
+% Define dissipation constant and reference temperature
+dissipation_constant = 4.5e-3;
+
+% Calculate power, voltage, and current
+P = dissipation_constant * (T - T0);
+V = sqrt(R .* P);
+I = sqrt(P ./ R);
+
+% Plot 3: Current vs. Temperature (log-log scale)
+f = figure(3);
+f.Position = pos_vector;
+loglog(T, I), grid on;
+xlabel("Temperature [K]"), ylabel("Current [A]"), title("Current - Temperature")
+
+% Plot 4: Voltage vs. Temperature (log-log scale)
+f = figure(4);
+f.Position = pos_vector;
+loglog(T, V), grid on;
+xlabel("Temperature [K]"), ylabel("Voltage [V]"), title("Voltage - Temperature")
+
+% Plot 5: Voltage vs. Current (log-log scale)
+f = figure(5);
+f.Position = pos_vector;
+loglog(I, V), grid on;
+ylabel("Voltage [V]"), xlabel("Current [A]"), title("Voltage - Current")
