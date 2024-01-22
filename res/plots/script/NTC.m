@@ -1,14 +1,15 @@
 clc, clear, clearvars, close all
 
 % Define temperature range from 260 K to 420 K with intervals of 0.5 K
-T = 100 : 1/2 : 420;
-
-% Calculate the parameter beta using the given resistance values at two temperature points
-beta = log(1.4e3/1e4) / (1/358.15 - 1/298.15);
+T = 100 : 1/2 : 600;
 
 % Set reference resistance and temperature values
 R0 = 1e4;
 T0 = 298.15;
+
+% Calculate the parameter beta using the given resistance values at two temperature points
+beta = log(1.4e3/R0) / (1/358.15 - 1/T0);
+
 
 % Calculate resistance values using the Steinhart-Hart equation
 R = R0 * exp(beta * (1 ./ T - 1/T0));
@@ -21,7 +22,6 @@ pos_vector = [250, 100, 1000, 650];
 f = figure(1);
 f.Position = pos_vector;
 semilogy(T, R), grid on;
-xlim([100 400])
 xlabel("Temperature [K]"), ylabel("Resistance [Ω]"), title("Resistance - Temperature")
 
 f = figure(2);
