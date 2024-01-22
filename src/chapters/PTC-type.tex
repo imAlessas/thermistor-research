@@ -1,6 +1,8 @@
 \section{PTC thermistors}
 As aforementioned, a positive temperature coefficient thermistor (also called \textbf{posistor}) is a thermally sensitive resistor that varies its resistivity as the temperature of the environment changes. Particularly because it is a positive coefficient, as the temperature increases, the resistivity of the semiconductor device increases as well.
 
+The posistor's structure is rather simple: a PTC material is put between two metal foil electrodes. The overall resistance of the PTC thermistor is given by the PTC material (also called \textsl{bulk}), the electrode resistance (which can be omitted) and the interface resistance \cite{Tang2023}. 
+
 \subsection{Charateristics}
 One of the most important properties of the PTC thermistor is the characteristic curve between the \textbf{resistance} $R$ and the \textbf{temperature} $T$, which has to be converted from Celsius (or Fahrenheit) to Kelvin. Its curve is a positive exponential graph that respects the following equation \cite{Saburi196353}\cite{jones2010biomedical}:
 
@@ -32,7 +34,7 @@ One of the most important properties of the PTC thermistor is the characteristic
     \caption{PTC change ratio between $R$ and $R_0$}
 \end{figure}
 
-\FloatBarrier\noindent In both of the plots the resistance value or the change ratio drastically increases as the environment gets hotter. In the next paragraph, we will see how important this characteristic is for building current-regulating circuits and protecting delicate components.
+\FloatBarrier\noindent In both of the plots the resistance value or the change ratio drastically increases as the environment gets hotter. Generally, the equation describes the behavior of the PTC thermistor in an interval of temperature: in the PTC materials there is a temperature, called \textbf{Curie point} where the resistance starts to rise exponentially in comparison with the temperature (as shown in figure \ref{fig:PTC_logarithmic} and \ref{fig:PTC_ratio}); before the Curie temperature, the PTC thermistor does not increase drastically their resistance when the temperature raises. Generally, the Curie point in the PTC materials is between 50°C and 400°C \cite{Cheng2014441}.
 
 Another important coefficient to know about is the \textbf{dissipation constant} $\delta$ which describes the power needed to increase the thermistor temperature by 1° Celsius through self-heating. The dissipation constant varies on the construction materials of the thermistor and the environment \cite{Saburi196353}. The constant $\delta$ is useful to describe the power dissipation of the thermistor when its temperature is $T$ (at thermal equilibrium) and the ambient temperature is $T_0$:
 
@@ -74,7 +76,7 @@ Another important coefficient to know about is the \textbf{dissipation constant}
 \end{figure}
 
 \FloatBarrier \subsection{Applications}
-The applications of the posistors are remarkably important. One of the most popular uses of these devices is as \textit{current limiters} to protect other devices. Sure enough, when there is an excess of current through a circuit it may result in a damaged component of the circuit, like the LED in figure \ref{fig:PTC-circuit-LED}; using a PTC thermistor prevents this from happening because when the current starts increasing through the thermistor, it will heat it making the resistance increase. When the resistance starts increasing the current flowing through it will decrease (as shown in figure \ref{fig:PTC_curr-temp}) and the LED will be protected \cite{Saburi196353}.
+The applications of the posistors are remarkably important. One of the most popular uses of these devices is as \textit{current limiters} to protect other devices. Sure enough, when there is an excess of current through a circuit it may result in a damaged component of the circuit, like the LED in figure \ref{fig:PTC-circuit-LED}; using a PTC thermistor prevents this from happening because when the current starts increasing through the thermistor, it will heat it making the resistance increase. When the resistance starts increasing the current flowing through it will decrease (as shown in figure \ref{fig:PTC_curr-temp}) and the LED will be protected \cite{Saburi196353}\cite{Perkins1982225}.
 
 \begin{figure}
     \centering
@@ -83,7 +85,5 @@ The applications of the posistors are remarkably important. One of the most popu
     \caption{Current limiter PTC application}
 \end{figure}
 
-Another important use is for the \textit{temperature indicator}, when operating in parallel with a diode, or for \textit{temperature control} purposes. In this case, the PTC posistor can control the power dissipated by another device that is connected in series \cite{Saburi196353}.
-
-\todo{maybe add other PTC applications}
+Other important applications are for the \textit{temperature indicator}, when operating in parallel with a diode, or for \textit{temperature control} purposes. In this case, the PTC posistor can control the power dissipated by another device that is connected in series \cite{Saburi196353}\cite{Perkins1982225}. The positive temperature coefficient thermistor may be also utilized to \textit{measure the heating} consumption by a system. For example, it may be used to determine the fuel consumption in a vehicle or the heating consumption in a hot-water-based heating system \cite{Dostert1982159}.
 
