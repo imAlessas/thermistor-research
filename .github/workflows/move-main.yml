@@ -19,7 +19,7 @@ jobs:
             - name: Move PDF if exists
               run: |
                 if [ -f src/main.pdf ]; then
-                mv src/main.pdf main.pdf
+                mv src/main.pdf research.pdf
                 fi
 
             - name: Set up Git
@@ -31,5 +31,5 @@ jobs:
             - name: Commit and push changes
               run: |
                 git add --all
-                git commit -m "Move main.pdf to root folder"
+                git commit -m "Move research to root folder"
                 git push origin $base_branch
